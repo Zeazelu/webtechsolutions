@@ -1,0 +1,16 @@
+.footer__container {
+    background-color: #111111;
+}
+.footer__container h3 {
+    text-align: center;
+
+    color: rgb(212, 212, 212);
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow:
+    -10px 10px 25px rgb(196, 196, 196),
+    -10px -10px 25px rgb(136, 136, 136),
+    10px -10px 25px rgb(78, 78, 78);
+}

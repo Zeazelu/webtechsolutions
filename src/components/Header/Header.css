@@ -1,0 +1,13 @@
+@media screen and (max-width: 1000px) {
+    .header__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        height: 120px;
+        background-color: #111111;
+    }
+    .header__container img {
+        height: 80px;
+    }
+}
