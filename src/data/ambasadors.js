@@ -19,8 +19,8 @@ export const ambasadors = [
     {
         id: 3,
         image: pazerna,
-        name: 'Klaudia Pazerna',
-        description: 'Łasa na kase'
+        name: 'Klaudia Szczodra',
+        description: 'Rozdawnictwo'
     },
     {
         id: 4,
