@@ -14,13 +14,14 @@
 .ambassador__wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
 }
 .ambassador__wrapper h2 {
     text-align: left;
     font-weight: 400;
     font-size: 23px;
     margin: 5px;
+
 }
 .ambassador__wrapper h1 {
     margin: 5px;
@@ -28,4 +29,5 @@
     font-weight: 400;
     font-style: italic;
     font-size: 15px;
+    width: 95%;
 }

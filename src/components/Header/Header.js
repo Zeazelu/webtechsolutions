@@ -6,6 +6,7 @@ function Header () {
     return (
         <div className="header__container">
             <img src={Logo} alt="logo" />
+            <button>Kontakt</button>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-.container {
+.app__landingpage {
   display: flex;
   flex-direction: column;
 }

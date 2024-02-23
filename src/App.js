@@ -6,7 +6,7 @@ import { ambasadors } from './data/ambasadors';
 
 function App() {
   return (
-    <div className='container'>
+    <div className='app__landingpage'>
       <Header />
       <Ambassadors ambasador={ambasadors} />
       <Footer />
