@@ -10,7 +10,7 @@ const Ambassadors = ({ ambasador }) => (
                 key = '0'
                 image = {szefu}
                 name = 'Danielek Szwajkowski'
-                description = 'Szefu'
+                description = 'CEO WEBTECH SOLUTIONS / Kielce'
             />
             <h3>AMBASADORZY</h3>
             {ambasador.map(item => (

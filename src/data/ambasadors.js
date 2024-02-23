@@ -7,26 +7,26 @@ export const ambasadors = [
     {
         id: 1,
         image: mariusz,
-        name: 'Mariusz Rolety',
-        description: 'Wrocław'
+        name: 'Julia Mycek',
+        description: 'Brand & Performance / Wrocław'
     },
     {
         id: 2,
         image: karol,
-        name: 'Karol Tanasiewicz',
-        description: 'Warszawa'
+        name: 'Zuzanna Ćwikła',
+        description: 'Marketing Specialist / Warszawa'
     },
     {
         id: 3,
         image: pazerna,
-        name: 'Klaudia Szczodra',
-        description: 'Warszawa'
+        name: 'Klaudia Gawron',
+        description: 'Communication Specialist / Warszawa'
     },
     {
         id: 4,
         image: skolim,
-        name: 'Karolina Skolim',
-        description: 'Katowice'
+        name: 'Karolina Łukasik',
+        description: 'Brand Marketing Intern / Katowice'
     },
 
 ]
