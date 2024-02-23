@@ -8,25 +8,25 @@ export const ambasadors = [
         id: 1,
         image: mariusz,
         name: 'Mariusz Rolety',
-        description: 'Regulacja rolet'
+        description: 'Wrocław'
     },
     {
         id: 2,
         image: karol,
         name: 'Karol Tanasiewicz',
-        description: 'Lubi browary'
+        description: 'Warszawa'
     },
     {
         id: 3,
         image: pazerna,
         name: 'Klaudia Szczodra',
-        description: 'Rozdawnictwo'
+        description: 'Warszawa'
     },
     {
         id: 4,
         image: skolim,
         name: 'Karolina Skolim',
-        description: 'Narobiła wstydu w Masce'
+        description: 'Katowice'
     },
 
 ]

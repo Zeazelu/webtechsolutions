@@ -7,6 +7,7 @@
         align-items: center;
         height: 100px;
         background-color: #0d0d0e;
+        border-bottom: 1px solid gray;
         
     }
     .header__container img {
@@ -25,8 +26,8 @@
         align-items: center;
         justify-content: space-between;
         height: 100px;
-        background-color: #0d0d0e;
-        
+        background-color: #0d0d0e;        
+        border-bottom: 1px solid gray;
     }
     .header__container img {
         height: 200px;
