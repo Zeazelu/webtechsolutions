@@ -3,7 +3,7 @@ import './Ambasador.css';
 
 const Ambasador = (props) => (
         <div className="ambassador__container">
-            <img src={props.image} />
+            <img src={props.image} alt = 'ambasador' />
             <div className="ambassador__wrapper">
                 <h2>{props.name}</h2>
                 <h1>{props.description}</h1>
