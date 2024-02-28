@@ -24,11 +24,12 @@ const Contact = () => {
     };
     return (
         <div className="contact__container">
+            <h2>Skontaktuj się z nami!</h2>
             <form ref={form} onSubmit={sendEmail}>
                 <input type="text" placeholder="Imię i nazwisko" name="user_name" />
                 <input type="email" placeholder="Adres email" name="user_email" />
                 <textarea placeholder="Treść wiadomości" name="message" />
-                <input type="submit" value="Wyślij" />
+                <button className="contact__button" type="submit">Wyślij</button>
             </form>
         </div>
     )
