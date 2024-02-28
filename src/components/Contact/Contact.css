@@ -3,5 +3,20 @@
     width: 70%;
     height: 500px;
     background-color: #111111;
-    color: white;
+    justify-content: center;
+    align-self: center;
+}
+
+form {
+    width: 90%;
+}
+input {
+    width: 100%;
+    height: 30px;
+}
+textarea {
+    width: 100%;
+    resize: none;
+    margin: 0 auto;
+    border-style: solid;
 }

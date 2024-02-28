@@ -25,13 +25,10 @@ const Contact = () => {
     return (
         <div className="contact__container">
             <form ref={form} onSubmit={sendEmail}>
-                <label>Imię i nazwisko</label>
-                <input type="text" name="user_name" />
-                <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Treść wiadomości</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
+                <input type="text" placeholder="Imię i nazwisko" name="user_name" />
+                <input type="email" placeholder="Adres email" name="user_email" />
+                <textarea placeholder="Treść wiadomości" name="message" />
+                <input type="submit" value="Wyślij" />
             </form>
         </div>
     )
