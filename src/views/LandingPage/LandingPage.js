@@ -8,21 +8,12 @@ import Contact from '../../components/Contact/Contact.js';
 import Quiz from '../../components/Quiz/Quiz.js';
 
 function LandingPage() {
-
-  const contactSectionRef = useRef(null);
-
-  const scrollToContact = () => {
-    if (contactSectionRef.current) {
-      contactSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className='landingpage__container'>
-      <Header onContactClick={scrollToContact} />
+      <Header />
       <Ambassadors ambasador={ambasadors} />
       <Quiz />
-      <div className="contact__container" ref={contactSectionRef}>
+      <div className="contact__container">
         <Contact />
       </div>
       <Footer />

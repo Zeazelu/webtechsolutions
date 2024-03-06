@@ -1,15 +1,9 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, } from "react";
 import emailjs from '@emailjs/browser';
 import './Contact.css'
 
 const Contact = () => {
     const form = useRef();
-
-    useEffect(() => {
-        if (form.current) {
-          form.current.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, []);
 
     const sendEmail = (e) => {
         e.preventDefault();
