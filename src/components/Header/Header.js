@@ -1,15 +1,14 @@
-import React from "react";
-import './Header.css'
-import Logo from '../../assets/webtech.png'
+import React from 'react';
+import './Header.css';
+import Logo from '../../assets/webtech.png';
 
-function Header () {
-    return (
-        <div className="header__container">
-            <img src={Logo} alt="logo" />
-            <button>Kontakt</button>
-        </div>
-    )
+function Header({ onContactClick }) {
+  return (
+    <div className='header__container'>
+      <img src={Logo} alt='logo' />
+      <button onClick={onContactClick}>Kontakt</button>
+    </div>
+  );
 }
-
 
 export default Header;
