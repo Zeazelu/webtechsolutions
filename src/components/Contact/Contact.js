@@ -1,7 +1,9 @@
 import React, { useRef, useState, } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 import './Contact.css'
+import './Contact.css';
 
 const Contact = () => {
 
@@ -13,9 +15,26 @@ const Contact = () => {
         // Ustawienie recaptchaVerified na true po poprawnej weryfikacji
         setRecaptchaVerified(true);
     }
+    const [formError, setFormError] = useState(null);
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        const { user_name, user_email, message } = e.target.elements;
+
+        // Prosta walidacja - sprawdzamy, czy pola są wypełnione
+        if (!user_name.value || !user_email.value || !message.value) {
+            setFormError("Wypełnij wszystkie pola formularza.");
+            return;
+        }
+
+        // Walidacja adresu email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(user_email.value)) {
+            setFormError("Podaj poprawny adres email.");
+            return;
+        }
 
         if (recaptchaVerified) {
             emailjs
@@ -36,7 +55,28 @@ const Contact = () => {
             console.log('Proszę zweryfikować reCAPTCHA przed wysłaniem formularza.');
             // Możesz dodać tutaj obsługę błędu lub wyświetlenie komunikatu użytkownikowi
         }
+        emailjs
+            .sendForm('service_a0pwy3g', 'template_39zdmhy', form.current, {
+                publicKey: 'matlptYJCfIIR59MB',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    e.target.reset();
+                    setFormError(null); // Wyczyszczenie błędu po udanym wysłaniu
+                    setIsFormSubmitted(true);
+
+                    // Ukryj komunikat po 3 sekundach
+                    setTimeout(() => {
+                        setIsFormSubmitted(false);
+                    }, 3000);
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
     };
+
     return (
         <>
             <h2>Skontaktuj się z nami!</h2>
@@ -50,6 +90,8 @@ const Contact = () => {
                 />,
                 <button className="contact__button" type="submit">Wyślij</button>
             </form>
+            {formError && <p className="error__message">{formError}</p>}
+            {isFormSubmitted && <p className="success__message">Formularz został pomyślnie wysłany!</p>}
         </>
     )
 }
