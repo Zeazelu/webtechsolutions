@@ -1,9 +1,7 @@
 import React, { useRef, useState, } from "react";
-import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 import './Contact.css'
-import './Contact.css';
 
 const Contact = () => {
 

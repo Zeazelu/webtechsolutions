@@ -22,3 +22,9 @@
     border: 0;
     font-size: 13px;
 }
+.quiz__container h2 {
+    font-size: 16px;
+}
+.quiz__container h1 {
+    font-size: 22px;
+}
