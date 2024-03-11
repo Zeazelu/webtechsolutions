@@ -12,6 +12,7 @@ const Contact = () => {
     const SERVICE = process.env.REACT_APP_EMAILJS_SERVICE;
     const TEMPLATE = process.env.REACT_APP_EMAILJS_TEMPLATE;
     const SITEKEY_LOCALHOST = process.env.REACT_APP_RECAPTCHA_SITE_KEY_LOCALHOST;
+    const SITEKEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY_PRODUCTION;
 
     const onChange = (value) => {
         console.log("Captcha value:", value);
@@ -64,7 +65,7 @@ const Contact = () => {
                 <input type="text" placeholder="Imię i nazwisko" name="user_name" />
                 <input type="email" placeholder="Adres email" name="user_email" />
                 <textarea placeholder="Treść wiadomości" name="message" />
-                <ReCAPTCHA sitekey={SITEKEY_LOCALHOST} onChange={onChange} />
+                <ReCAPTCHA sitekey={SITEKEY} onChange={onChange} />
                 <button className="contact__button" type="submit">Wyślij</button>
             </form>
             {formError && <p className="error__message">{formError}</p>}
