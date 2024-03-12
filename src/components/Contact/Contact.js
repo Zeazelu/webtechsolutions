@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 import './Contact.css';
 
-const Contact = () => {
+const Contact = forwardRef ((props, ref) => {
     const [recaptchaVerified, setRecaptchaVerified] = useState(false);
     const [formError, setFormError] = useState(null);
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -61,7 +61,7 @@ const Contact = () => {
     return (
         <>
             <h2>Skontaktuj się z nami!</h2>
-            <form onSubmit={sendEmail}>
+            <form ref={ref} onSubmit={sendEmail}>
                 <input type="text" placeholder="Imię i nazwisko" name="user_name" />
                 <input type="email" placeholder="Adres email" name="user_email" />
                 <textarea placeholder="Treść wiadomości" name="message" />
@@ -72,6 +72,7 @@ const Contact = () => {
             {isFormSubmitted && <p className="success__message">Formularz został pomyślnie wysłany!</p>}
         </>
     );
-};
+
+});
 
 export default Contact;

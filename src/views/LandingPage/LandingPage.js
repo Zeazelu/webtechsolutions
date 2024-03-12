@@ -8,13 +8,14 @@ import Contact from '../../components/Contact/Contact.js';
 import Quiz from '../../components/Quiz/Quiz.js';
 
 function LandingPage() {
+  const contactRef = useRef(null);
   return (
     <div className='landingpage__container'>
-      <Header />
+      <Header contactRef={contactRef} />
       <Ambassadors ambasador={ambasadors} />
       <Quiz />
       <div className="contact__container">
-        <Contact />
+        <Contact ref={contactRef} />
       </div>
       <Footer />
     </div>
