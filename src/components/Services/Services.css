@@ -1,0 +1,16 @@
+.services__container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services__container h1 {
+    color: rgb(233, 233, 233);
+    font-family: Epilogue, sans-serif;
+    font-size: 3.25rem;
+    font-weight: 600;
+    line-height: 5rem;
+}
