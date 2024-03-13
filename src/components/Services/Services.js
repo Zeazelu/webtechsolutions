@@ -6,7 +6,7 @@ const Services = () => {
 
     return (
         <div className="services__container">
-            <video src={background} autoPlay muted loop/>
+            <video src={background} autoPlay muted loop playsInline/>
             <div className="services__wrapper">
                 <h1>Twoja Wizytówka w Wirtualnym Świecie</h1>
                 <h2>Przekształćmy razem Twoje pomysły w interaktywne i responsywne strony internetowe, które przyciągną uwagę! Z nami Twoja marka stanie się nie tylko widoczna, ale także pamiętana.</h2>
