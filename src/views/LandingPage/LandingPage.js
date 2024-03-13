@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/Footer.js';
 import { ambasadors } from '../../data/ambasadors.js';
 import Contact from '../../components/Contact/Contact.js';
 import Quiz from '../../components/Quiz/Quiz.js';
+import Welcome from '../../components/Welcome/Welcome.js';
 import Services from '../../components/Services/Services.js';
 
 function LandingPage() {
@@ -26,6 +27,7 @@ function LandingPage() {
   return (
     <div className='landingpage__container'>
       <Header contactRef={contactRef} />
+      <Welcome />
       <Services />
       <Ambassadors ambasador={ambasadors} />
       <Quiz />
