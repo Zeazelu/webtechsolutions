@@ -1,50 +1,52 @@
 @media screen and (max-width: 850px) {
-    .header__container{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        background-color: #0d0d0e;
-        border-bottom: 1px solid gray;
-        
-    }
-    .header__container img {
-        height: 100%;
-        width: 80%;
-        object-fit: contain;
-    }
-    .header__container button {
-        display: none;
-    }
+  .header__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #0d0d0e;
+    border-bottom: 1px solid gray;
+  }
+  .header__container img {
+    height: 100%;
+    width: 80%;
+    object-fit: contain;
+  }
+  .header__container button {
+    display: none;
+  }
 }
 @media screen and (min-width: 851px) {
-    .header__container{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100px;
-        background-color: #0d0d0e;        
-        border-bottom: 1px solid gray;
-    }
-    .header__container img {
-        height: 200px;
-        width: 400px;
-        object-fit: contain;
-        margin: 0px 10vw;
-    }
-    .header__container button {
-        background-color: #0067F4;
-        border-radius: 24px;
-        width: 110px;
-        height: 4vh;
-        color: #F8f7f4;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 500;
-        margin: 0px 10vw;
-        border: 0;
-        font-size: 16px;
-    }
+  .header__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #0d0d0e;
+    border-bottom: 1px solid gray;
+  }
+  .header__container img {
+    height: 200px;
+    width: 400px;
+    object-fit: contain;
+    margin: 0px 10vw;
+  }
+  .header__container button {
+    background-color: #0067f4;
+    border-radius: 24px;
+    width: 110px;
+    height: 4vh;
+    color: #f8f7f4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-weight: 500;
+    margin: 0px 10vw;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+  }
 }
