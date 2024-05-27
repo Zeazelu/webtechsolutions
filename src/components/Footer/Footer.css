@@ -3,7 +3,7 @@
 }
 .footer__container h3 {
   text-align: center;
-
+  user-select: none;
   color: rgb(212, 212, 212);
   font-size: 15px;
   font-weight: 500;

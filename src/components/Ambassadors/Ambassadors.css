@@ -14,4 +14,5 @@
   font-family: "Courier New", Courier, monospace;
   text-shadow: -10px 10px 25px rgb(196, 196, 196),
     -10px -10px 25px rgb(136, 136, 136), 10px -10px 25px rgb(78, 78, 78);
+  user-select: none;
 }

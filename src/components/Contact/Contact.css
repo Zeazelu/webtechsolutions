@@ -21,6 +21,7 @@
   }
   .contact__container h2 {
     color: #f8f7f4;
+    user-select: none;
   }
 
   form {
@@ -83,6 +84,7 @@
 @media screen and (min-width: 1001px) {
   .contact__container h2 {
     color: #f8f7f4;
+    user-select: none;
   }
 
   form {

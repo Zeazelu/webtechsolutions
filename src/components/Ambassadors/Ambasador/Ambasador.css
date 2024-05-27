@@ -23,6 +23,7 @@
     font-size: 23px;
     margin: 5px;
     font-family: BlinkMacSystemFont;
+    user-select: none;
   }
   .ambassador__wrapper h1 {
     margin: 5px;
@@ -32,6 +33,7 @@
     font-size: 15px;
     width: 95%;
     font-family: BlinkMacSystemFont;
+    user-select: none;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 1600px) {
@@ -61,6 +63,7 @@
     font-size: 23px;
     margin: 5px;
     font-family: BlinkMacSystemFont;
+    user-select: none;
   }
   .ambassador__wrapper h1 {
     margin: 5px;
@@ -70,6 +73,7 @@
     font-size: 15px;
     width: 95%;
     font-family: BlinkMacSystemFont;
+    user-select: none;
   }
 }
 @media screen and (min-width: 1601px) {
@@ -98,6 +102,7 @@
     font-size: 23px;
     margin: 5px;
     font-family: BlinkMacSystemFont;
+    user-select: none;
   }
   .ambassador__wrapper h1 {
     margin: 5px;
@@ -107,5 +112,6 @@
     font-size: 15px;
     width: 95%;
     font-family: BlinkMacSystemFont;
+    user-select: none;
   }
 }
