@@ -7,7 +7,8 @@ import { ambasadors } from "../../data/ambasadors.js";
 import Contact from "../../components/Contact/Contact.js";
 import Quiz from "../../components/Quiz/Quiz.js";
 import Welcome from "../../components/Welcome/Welcome.js";
-import Services from "../../components/Services/Services.js";
+import TextWithImage from "../../components/TextWithImage/TextWithImage.js";
+import Mockup from "../../assets/mockup.png";
 
 function LandingPage() {
   const contactRef = useRef(null);
@@ -28,7 +29,10 @@ function LandingPage() {
     <div className="landingpage__container">
       <Header contactRef={contactRef} />
       <Welcome />
-      <Services />
+      <TextWithImage
+        text="Strony internetowe stanowią niezbędny element współczesnego świata biznesu. Dzięki nim firmy mogą skutecznie komunikować się z klientami, prezentować swoje produkty i usługi, budować markę oraz zwiększać swoją widoczność w internecie."
+        image={Mockup}
+      />
       <Ambassadors ambasador={ambasadors} />
       <Quiz />
       <div className="contact__container">

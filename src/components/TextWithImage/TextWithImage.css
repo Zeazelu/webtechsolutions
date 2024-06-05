@@ -1,19 +1,19 @@
 @media screen and (max-width: 500px) {
-  .services__container {
+  .textwithimage__container {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .services__wrapper {
+  .textwithimage__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .services__wrapper img {
+  .textwithimage__wrapper img {
     width: 90%;
   }
-  .services__wrapper h1 {
+  .textwithimage__wrapper h1 {
     color: rgb(233, 233, 233);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -26,21 +26,21 @@
   }
 }
 @media screen and (min-width: 501px) and (max-width: 1000px) {
-  .services__container {
+  .textwithimage__container {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .services__wrapper {
+  .textwithimage__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .services__wrapper img {
+  .textwithimage__wrapper img {
     width: 70%;
   }
-  .services__wrapper h1 {
+  .textwithimage__wrapper h1 {
     color: rgb(233, 233, 233);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -54,21 +54,21 @@
   }
 }
 @media screen and (min-width: 1001px) {
-  .services__container {
+  .textwithimage__container {
     display: flex;
     flex-direction: row;
     width: 100%;
   }
-  .services__wrapper {
+  .textwithimage__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .services__wrapper img {
+  .textwithimage__wrapper img {
     width: 70%;
   }
-  .services__wrapper h1 {
+  .textwithimage__wrapper h1 {
     color: rgb(233, 233, 233);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
