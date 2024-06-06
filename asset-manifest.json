@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.8835a57d.css",
-    "main.js": "/static/js/main.541576b2.js",
+    "main.css": "/static/css/main.24a34848.css",
+    "main.js": "/static/js/main.49c4a06e.js",
     "static/js/453.176266a4.chunk.js": "/static/js/453.176266a4.chunk.js",
     "static/media/background.mp4": "/static/media/background.3d35ae4ad8f6feef5274.mp4",
     "static/media/szefu.JPG": "/static/media/szefu.4084c416fc5f9b059b96.JPG",
-    "static/media/mockup.png": "/static/media/mockup.58ad994e2210c030a25c.png",
     "static/media/poster.png": "/static/media/poster.2f656a6ac4617e51181c.png",
     "static/media/karol.png": "/static/media/karol.88c92ac6242a0408cffd.png",
     "static/media/mariusz.jpg": "/static/media/mariusz.390480e1a52cdf2626c8.jpg",
+    "static/media/mockup.png": "/static/media/mockup.f14818350bcb186780e8.png",
     "static/media/pazerna.JPG": "/static/media/pazerna.ce02197533d6281b5e70.JPG",
     "static/media/skolim.JPG": "/static/media/skolim.68a499d20a1a4b5e64e9.JPG",
     "static/media/logo.svg": "/static/media/logo.53356565d9fb184f981d943d05230471.svg",
     "index.html": "/index.html",
-    "main.8835a57d.css.map": "/static/css/main.8835a57d.css.map",
-    "main.541576b2.js.map": "/static/js/main.541576b2.js.map",
+    "main.24a34848.css.map": "/static/css/main.24a34848.css.map",
+    "main.49c4a06e.js.map": "/static/js/main.49c4a06e.js.map",
     "453.176266a4.chunk.js.map": "/static/js/453.176266a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8835a57d.css",
-    "static/js/main.541576b2.js"
+    "static/css/main.24a34848.css",
+    "static/js/main.49c4a06e.js"
   ]
 }
