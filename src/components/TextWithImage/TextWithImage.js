@@ -1,14 +1,14 @@
 import React from "react";
 import "./TextWithImage.css";
 
-const TextWithImage = (props) => {
+const TextWithImage = ({ text, image, reverse }) => {
   return (
-    <div className="textwithimage__container">
-      <div className="textwithimage__wrapper">
-        <h1>{props.text}</h1>
+    <div className={`textwithimage__container ${reverse ? "reverse" : ""}`}>
+      <div className={`textwithimage__wrapper ${reverse ? "reverse" : ""}`}>
+        <h1>{text}</h1>
       </div>
-      <div className="textwithimage__wrapper">
-        <img src={props.image} alt="mockup" />
+      <div className={`textwithimage__wrapper ${reverse ? "reverse" : ""}`}>
+        <img src={image} alt="mockup" />
       </div>
     </div>
   );

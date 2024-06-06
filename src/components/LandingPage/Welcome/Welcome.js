@@ -1,7 +1,7 @@
 import React from "react";
 import "./Welcome.css";
-import background from "../../assets/background.mp4";
-import poster from "../../assets/poster.png";
+import background from "../../../assets/background.mp4";
+import poster from "../../../assets/poster.png";
 
 const Welcome = () => {
   return (

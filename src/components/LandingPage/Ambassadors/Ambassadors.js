@@ -1,7 +1,7 @@
 import React from "react";
 import "./Ambassadors.css";
 import Ambasador from "./Ambasador/Ambasador";
-import szefu from "../../assets/szefu.JPG";
+import szefu from "../../../assets/szefu.JPG";
 
 const Ambassadors = ({ ambasador }) => (
   <div className="ambassadors__container" id="ambassadors">
