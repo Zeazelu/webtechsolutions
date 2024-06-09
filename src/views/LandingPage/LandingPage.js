@@ -9,6 +9,9 @@ import Quiz from "../../components/LandingPage/Quiz/Quiz.js";
 import Welcome from "../../components/LandingPage/Welcome/Welcome.js";
 import TextWithImage from "../../components/TextWithImage/TextWithImage.js";
 import Mockup from "../../assets/mockup.png";
+import Stanowisko from "../../assets/DSC_0084.webp";
+import Sklep from "../../assets/shop.webp";
+import Site from "../../assets/site.webp";
 
 function LandingPage() {
   const contactRef = useRef(null);
@@ -31,16 +34,16 @@ function LandingPage() {
       <Welcome />
       <TextWithImage
         text="Strony internetowe stanowią niezbędny element współczesnego świata biznesu. Dzięki nim firmy mogą skutecznie komunikować się z klientami, prezentować swoje produkty i usługi, budować markę oraz zwiększać swoją widoczność w internecie."
-        image={Mockup}
+        image={Site}
       />
       <TextWithImage
         text="WEBTECH SOLUTIONS specjalizuje się w tworzeniu nowoczesnych i funkcjonalnych sklepów internetowych, które pomagają naszym klientom osiągać sukcesy w handlu online."
-        image={Mockup}
+        image={Sklep}
         reverse
       />
       <TextWithImage
         text="Korzystamy z najnowszych technologii i profesjonalnego sprzętu, aby zapewnić najwyższą jakość usług. Nasz zespół doświadczonych specjalistów dba o każdy detal, od projektowania po wdrożenie, gwarantując, że Twoja platforma e-commerce będzie działać sprawnie i niezawodnie."
-        image={Mockup}
+        image={Stanowisko}
       />
       <Ambassadors ambasador={ambasadors} />
       <Quiz />
