@@ -1,3 +1,21 @@
+.textwithimage__container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out 0.5s, transform 0.6s ease-out 0.5s;
+}
+
+.textwithimage__container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.textwithimage__wrapper img {
+  transition: transform 0.4s ease-in-out;
+}
+
+.textwithimage__wrapper img:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 500px) {
   .textwithimage__container {
     display: flex;
@@ -16,7 +34,8 @@
     width: 100%;
     max-height: 25vh;
     object-fit: cover;
-    box-shadow: 1px 1px 2px black, 0 0 20px rgb(56, 56, 56), 0 0 3px rgb(112, 112, 112);
+    box-shadow: 1px 1px 2px black, 0 0 20px rgb(56, 56, 56),
+      0 0 3px rgb(112, 112, 112);
   }
   .textwithimage__wrapper h1 {
     color: rgb(233, 233, 233);
@@ -43,13 +62,13 @@
     align-items: center;
     justify-content: center;
     margin: 4% 7%;
-    
   }
   .textwithimage__wrapper img {
     width: 100%;
     max-height: 35vh;
     object-fit: cover;
-    box-shadow: 1px 1px 2px black, 0 0 20px rgb(56, 56, 56), 0 0 3px rgb(112, 112, 112);
+    box-shadow: 1px 1px 2px black, 0 0 20px rgb(56, 56, 56),
+      0 0 3px rgb(112, 112, 112);
   }
   .textwithimage__wrapper h1 {
     color: rgb(233, 233, 233);
@@ -67,13 +86,20 @@
   .textwithimage__container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     box-sizing: border-box;
+    height: 80vh;
   }
   .textwithimage__container.reverse {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 80vh;
   }
   .textwithimage__wrapper {
     display: flex;
@@ -84,9 +110,10 @@
   }
   .textwithimage__wrapper img {
     width: 100%;
-    max-height: 40vh;
-    object-fit: cover;
-    box-shadow: 1px 1px 2px black, 0 0 25px rgb(56, 56, 56), 0 0 5px rgb(112, 112, 112);
+    height: 40vh;
+    object-fit: scale-down;
+    box-shadow: 1px 1px 2px black, 0 0 25px rgb(56, 56, 56),
+      0 0 5px rgb(112, 112, 112);
   }
   .textwithimage__wrapper h1 {
     color: rgb(233, 233, 233);
