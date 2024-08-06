@@ -10,10 +10,7 @@
 }
 .textwithimage__wrapper img {
   transition: transform 0.4s ease-in-out;
-}
-
-.textwithimage__wrapper img:hover {
-  transform: scale(1.2);
+  overflow: hidden;
 }
 
 @media screen and (max-width: 500px) {

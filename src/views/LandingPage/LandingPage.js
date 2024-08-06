@@ -8,13 +8,14 @@ import Contact from "../../components/LandingPage/Contact/Contact.js";
 import Quiz from "../../components/LandingPage/Quiz/Quiz.js";
 import Welcome from "../../components/LandingPage/Welcome/Welcome.js";
 import TextWithImage from "../../components/TextWithImage/TextWithImage.js";
-import Mockup from "../../assets/mockup.png";
 import Stanowisko from "../../assets/DSC_0084.webp";
 import Sklep from "../../assets/shop.webp";
 import Site from "../../assets/site.webp";
+import { useNavigate } from "react-router-dom";
 
 function LandingPage() {
   const contactRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const scrollToTop = () => {
@@ -27,6 +28,10 @@ function LandingPage() {
 
     return () => clearTimeout(timeoutId);
   }, []);
+
+  const handleButtonClick = () => {
+    navigate("/blog");
+  };
 
   return (
     <div className="landingpage__container">
@@ -50,6 +55,7 @@ function LandingPage() {
       <div className="contact__container">
         <Contact ref={contactRef} />
       </div>
+      <button onClick={handleButtonClick}>Blog</button>
       <Footer />
     </div>
   );
