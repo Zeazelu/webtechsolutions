@@ -8,8 +8,11 @@ import Welcome from "../../components/LandingPage/Welcome/Welcome.js";
 import Slider from "../../components/Slider/Slider.js";
 import InteractiveHeaders from "../../components/InteractiveHeaders/InteractiveHeaders.js";
 import TextWithTitle from "../../components/TextWithTitle/TextWithTitle.js";
-import { localisation, services } from "../../data/LandingPage.js/Content.js";
-import { sites } from "../../data/LandingPage.js/Content.js";
+import {
+  location,
+  portfolio,
+  services,
+} from "../../data/LandingPage.js/Content.js";
 import { aboutus } from "../../data/LandingPage.js/Content.js";
 
 function LandingPage() {
@@ -37,9 +40,9 @@ function LandingPage() {
       <Header contactRef={contactRef} />
       <Welcome />
       <InteractiveHeaders headers={services} />
-      <Slider sites={sites} />
+      <TextWithTitle content={portfolio} />
       <TextWithTitle content={aboutus} />
-      <TextWithTitle content={localisation} />
+      <TextWithTitle content={location} />
       <div className="contact__container">
         <Contact ref={contactRef} />
       </div>

@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     width: 95vw;
-    height: 50vh;
     user-select: none;
   }
 }
@@ -14,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 100%;
     user-select: none;
     height: 70vh;
   }
