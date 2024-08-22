@@ -2,10 +2,10 @@ import Site from "../../assets/site.webp";
 import Workstation from "../../assets/DSC_0084.webp";
 import Shop from "../../assets/shop.webp";
 import TextWithImage from "../../components/TextWithImage/TextWithImage.js";
-import site1 from "../../assets/1.png";
-import site2 from "../../assets/2.png";
-import site3 from "../../assets/3.png";
-import site4 from "../../assets/4.png";
+import site1 from "../../assets/3.png";
+import site2 from "../../assets/4.png";
+import site3 from "../../assets/1.png";
+import site4 from "../../assets/2.png";
 import Slider from "../../components/Slider/Slider.js";
 
 export const services = [
@@ -51,22 +51,22 @@ export const sites = [
   {
     id: 1,
     image: site1,
-    link: "https://zeazelu.github.io/homestudio/",
+    link: "https://webtechsolutions-portfolio.github.io/template1/",
   },
   {
     id: 2,
     image: site2,
-    link: "Zuzanna Ćwikła",
+    link: "https://webtechsolutions-portfolio.github.io/template2/",
   },
   {
     id: 3,
     image: site3,
-    link: "Klaudia Gawron",
+    link: "https://zeazelu.github.io/homestudio/",
   },
   {
     id: 4,
     image: site4,
-    link: "Karolina Łukasik",
+    link: "https://zeazelu.github.io/homestudio/",
   },
 ];
 

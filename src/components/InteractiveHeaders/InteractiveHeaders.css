@@ -53,7 +53,7 @@
     align-items: center;
     text-align: center;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .interactiveheaders__headers {

@@ -6,6 +6,14 @@
     width: 95vw;
     user-select: none;
   }
+  .slider__container a {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .slider__container a:visited {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 @media screen and (min-width: 1001px) {
@@ -17,11 +25,14 @@
     user-select: none;
     height: 70vh;
   }
-  a {
+  .legend {
+    width: 50px;
+  }
+  .slider__container a {
     font-size: 1rem;
     color: white;
   }
-  a:visited {
+  .slider__container a:visited {
     color: white;
     text-decoration: none;
   }
